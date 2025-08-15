@@ -1,7 +1,10 @@
+
+/* ESTIO GERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -10,5 +13,56 @@ body {
 }
 
 .interface {
-    
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+/* Chama a classe que está diretamente dentro da classe header (pesquisar mais sobre)*/
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Em display é convertido para inline-block, passará a ter as prpiedades do block mas vai manter as do inline */
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+/* O hover indica que se o usuário passar o mouse por cima acontecerá alguma coisa */
+/* A propiedade transform só funciona para itens/elementos que são block-level, e o link padrão é inline-level */
+header a:hover{
+    color: white;
+    transform: scale(1.07);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px aquamarine;
 }

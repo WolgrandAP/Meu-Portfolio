@@ -1,0 +1,291 @@
+/* ----- ESTILO GERAL ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    min-height: 900px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button, form button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+
+button:hover {
+    box-shadow: 0px 0px 8px aquamarine;
+    transform: scale(1.02);
+}
+
+h2.titulo,
+h2.titulo-form,
+.titulo-comen {
+    color: white;
+    text-align: center;
+}
+
+h2.titulo-form span,
+h2.titulo span {
+    color: aquamarine;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: aquamarine;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0px 5px;
+    transition: 2s;
+}
+
+/* ----- CABEÇALHO ----- */
+header {
+    padding: 40px 4%;
+}
+
+header .logo img {
+    height: 90px;
+    width: auto;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.07);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ----- FORMULÁRIO ----- */
+.area-comentario {
+    max-width: 500px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgba(85, 85, 85, 0.212);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 180px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* ----- COMENTÁRIOS ----- */
+#listaComentarios {
+    list-style: none;
+    padding: 0;
+}
+
+.comentario-item {
+    background-color: rgba(255, 255, 255, 0.144);
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comentario-texto {
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.comentario-botoes button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.comentario-botoes button:hover {
+    color: aquamarine;
+}
+
+/* ----- ESTILO PROJETOS ----- */
+section.portfolio {
+    padding: 80px 4%;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ESTILO RODAPÉ */
+footer{
+    padding: 60px 4%;
+    margin-top: 150px;
+}
+
+footer .logo-footer img{
+    width: 90px;
+    height: auto;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid aquamarine;
+}
+
+footer .line-footer p i{
+    color: aquamarine;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: white;
+}
+
+@media screen and (max-width: 1020px) {
+        /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* MEUS PROJETOS */
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{
+       width: 100%; 
+       max-width: 360px;
+       margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+     /* RODAPÉ */
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Fim Google Fonts -->
+    <!-- BOOTSTRTAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Fim BOOTSTRTAP ICONS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/Logo W.png" alt="">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+            
+        </div><!--interface-->
+    </header>
+
+    <!-- Topo do site -->
+    <main>
+        <section class="topo-do-site" id="topo-do-site">
+            <div class="interface">
+                <div class="flex"> <!-- A classe flex é uma classe geral onde será trabalhada dentro de outras seções -->
+                    <div class="txt-topo-site">
+                        <h1>Wolgrand — Full Stack Developer</h1>
+                        <p>
+                            Me chamo Wolgrand e busco realizar meu sonho de ser um grande programador full-stack
+                            a partir dos conhecimentos e experiências que adquiri ao longo da minha jornada acadêmica,
+                            e aprender ainda mais com oportunidades práticas no mercado de trabalho.
+                        </p>
+
+                        <div class="btn-contato">
+                            <a href="#formulario">
+                                <button>Fale comigo</button>
+                            </a>
+                        </div>
+                    </div><!-- txt-topo-site -->
+
+                    <div class="img-topo-site">
+                        <img src="images/FotoPerfil.jpg" alt="foto-perfil">
+                    </div>
+                </div>
+            </div><!--interface-->
+        </section>
+            
+        <section class="especialidades" id="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-java"></i>
+                        <h3>Back-end</h3>
+                        <p>Tenho experiência em desenvolvimento back-end com Java e Python, atuando na implementação de regras de negócio, construção de APIs, uso do spring boot e integração com bancos de dados. Busco sempre aplicar boas práticas e desenvolver soluções eficientes e escaláveis.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-html"></i>
+                        <h3>Front-end</h3>
+                        <p>Tenho experiência em desenvolvimento front-end com JavaScript, HTML e CSS, criando interfaces responsivas e dinâmicas voltadas para a boa experiência do usuário. Já trabalhei em projetos acadêmicos integrando o front-end ao back-end, sempre aplicando boas práticas de organização e usabilidade.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-database"></i>
+                        <h3>Banco de dados</h3>
+                        <p>Tenho experiência no uso de bancos de dados relacionais, especialmente PostgreSQL e H2, trabalhando com modelagem, consultas SQL, integração com aplicações e persistência de dados em projetos acadêmicos e práticos.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-git"></i>
+                        <h3>Git e GitHub</h3>
+                        <p>Tenho experiência com Git e GitHub para versionamento de código, controle de histórico e colaboração em projetos. Utilizo essas ferramentas para organizar repositórios, gerenciar branches e facilitar o trabalho em equipe.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidade-->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="" alt="">
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">
+                        <h2>CONHEÇA MAIS <span>SOBRE MIM</span></h2>
+                        <p>Sou programador full-stack, natural de Esperança-PB, com 21 anos, e meu objetivo é consolidar minha carreira na área de desenvolvimento de software. Desde que me interessei por programação, dedico-me diariamente aos estudos e ao aprimoramento das minhas habilidades, sempre em busca de novos desafios que unam prática e aprendizado.</p>
+                        <p>Atualmente, curso Tecnologia em Análise e Desenvolvimento de Sistemas no IFPB – Campus Esperança, onde também atuo como monitor da disciplina de Programação Orientada a Objetos. Além da formação acadêmica, procuro ampliar meus conhecimentos por meio de cursos extracurriculares e da participação em eventos da área de tecnologia e inovação, como hackathons e encontros científicos.</p>
+                        <p>Tenho experiência em linguagens e tecnologias como Python, Java, JavaScript, HTML, CSS, PostgreSQL, Git e GitHub, aplicando esses conhecimentos em projetos práticos, como a Plataforma de Venda de Ingressos, desenvolvida em Java e JavaScript, e o Pest Vision, criado durante um hackathon para auxiliar agricultores no monitoramento de pragas.</p>
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/wolgrand_10" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/WolgrandAP" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/wolgrand-araujop/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interfacec-->
+        </section><!--sobre-->
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO</span></h2>
+
+                <form id="contatoForm">
+                    <input type="text" name="nomeContato" id="nomeContato" placeholder="Seu nome completo:" required>
+                    <input type="text" name="emailContato" id="emailContato" placeholder="Seu e-mail:" required>
+                    <input type="text" name="telefoneContato" id="telefoneContato" placeholder="Seu número de celular:">
+                    <textarea id="mensagemContato" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR" onclick="enviarContato(event)"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+
+        <script src="script.js" defer></script>
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/Logo W.png" alt="">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/wolgrand_10"><button><i class="bi bi-instagram" target="_blank"></i></button></a>
+                        <a href="https://github.com/WolgrandAP" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/wolgrand-araujop" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+
+             <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:wolgrand.tecdedv@gmail.com">wolgrand.tecdev@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+    
+
+</body>
+</html>
